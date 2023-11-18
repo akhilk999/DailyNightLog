@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/daily_night_log/daily_night_log.iml" filepath="$PROJECT_DIR$/daily_night_log/daily_night_log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daily_night_log/android/daily_night_log_android.iml" filepath="$PROJECT_DIR$/daily_night_log/android/daily_night_log_android.iml" />
     </modules>
   </component>
 </project>
