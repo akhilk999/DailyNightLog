@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:daily_night_log/color.dart';
-import 'package:daily_night_log/morning.dart';
-import 'package:daily_night_log/night.dart';
-import 'package:daily_night_log/past.dart';
+import 'package:daily_night_log/screens/morning.dart';
+import 'package:daily_night_log/screens/night.dart';
+import 'package:daily_night_log/screens/past.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const WelcomeScreen());
@@ -21,6 +22,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       title: 'Daily Night Log',
       theme: ThemeData(
         primarySwatch: createMaterialColor(const Color(0xFF573C31)),
+        textTheme: GoogleFonts.alegreyaTextTheme(Theme.of(context).textTheme)
       ),
       home: const BottomBar(),
     );
@@ -57,7 +59,7 @@ class _BottomBarState extends State<BottomBar> {
         unselectedItemColor: Colors.grey[400],
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.wb_sunny), label: 'morning'),
           BottomNavigationBarItem(icon: Icon(Icons.dark_mode), label: 'night'),
           BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'past'),
