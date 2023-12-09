@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:daily_night_log/color.dart';
-import 'package:daily_night_log/screens/morning.dart';
-import 'package:daily_night_log/screens/night.dart';
+import 'package:daily_night_log/screens/morning/morning.dart';
+import 'package:daily_night_log/screens/night/night.dart';
 import 'package:daily_night_log/screens/past.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +22,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       title: 'Daily Night Log',
       theme: ThemeData(
         primarySwatch: createMaterialColor(const Color(0xFF573C31)),
-        textTheme: GoogleFonts.alegreyaTextTheme(Theme.of(context).textTheme)
+        textTheme: GoogleFonts.alegreyaTextTheme(Theme.of(context).textTheme),
+        useMaterial3: true,
       ),
       home: const BottomBar(),
     );
